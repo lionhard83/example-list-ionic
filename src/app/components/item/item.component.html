@@ -1,0 +1,3 @@
+<ion-label>{{name}}</ion-label>
+<ion-toggle (ionChange)='toggle(isOn)' mode='ios' [checked]='isOn' [(ngModel)]="isOn" ></ion-toggle>
+<ion-input [disabled]='!isOn' [(ngModel)]='description'></ion-input>
